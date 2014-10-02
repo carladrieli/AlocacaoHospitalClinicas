@@ -3,14 +3,15 @@ import java.util.Scanner;
 
 public class DiaETurno {
 
-	protected int dia ;
-	protected int turno ;	
+	protected byte dia ;
+	protected byte turno ;
+	protected byte opc ;	
 	
-	public int getDia() {
+	public byte getDia() {
 		return dia;
 	}
 
-	public int getTurno() {
+	public byte getTurno() {
 		return turno;
 	}
 	
@@ -18,7 +19,7 @@ public class DiaETurno {
 	void escolherDia (){
 	
 		Scanner ler = new Scanner(System.in);
-		int selecao = ler.nextInt();
+		byte selecao = (byte) ler.nextInt();
 		
 		System.out.println("Selecione um dia da semana: ");	
 		System.out.print("1 - Domingo \n2 - Segunda-Feira \n3 - Terça-Feira \n4 - Quarta-Feira \n5 - Quinta-Feira \n6 - Sexta-Feira \n7 - Sábado \n");
@@ -60,7 +61,7 @@ public class DiaETurno {
 				break;
 				
 			default:
-				System.out.println("Este não é um dia válido!");
+				System.out.println("Este nao e um dia valido!");
 				break;
 		
 		}
@@ -69,9 +70,14 @@ public class DiaETurno {
 	 
 	void escolherTurno(){
 		Scanner ler = new Scanner(System.in);
-		int selecao = ler.nextInt();
+		byte selecao = (byte) ler.nextInt();
+
+                System.out.println("Selecione um turno do dia da semana escolhido anteriormente: ");	
+		System.out.print("1 - Manha \n2 - Tarde \n3 - Noite \n");
+
+
 		switch (selecao){
-			case 1:		// Manhã
+			case 1:		// Manha
 				this.turno=1;  
 				break;
 
@@ -83,5 +89,23 @@ public class DiaETurno {
 				this.turno=3;  
 				break;
 		}
+
 	}
+
+	void escolherOutrosDias(){
+		Scanner ler = new Scanner(System.in);
+		byte selecao = (byte) ler.nextInt();
+		switch (selecao){
+			case 1:		// Escolher mais dias e turnos
+				this.opc=1;  
+				break;
+
+			case 2:		// Não quer escolher mais dias e turnos
+				this.opc=2;  
+				break;
+			
+		}
+	}
+
+
 }
