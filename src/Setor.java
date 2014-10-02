@@ -2,9 +2,8 @@
 
 public class Setor {
 	String nome;
-	int andar;
+	byte andar;
 	ChefeDoSetor chefe;
-	Funcionario funcionario;
 	
 	
 

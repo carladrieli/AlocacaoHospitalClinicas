@@ -1,4 +1,5 @@
 import static org.junit.Assert.*;
+import junit.framework.Assert;
 
 import org.junit.After;
 import org.junit.Before;
@@ -23,6 +24,12 @@ public class ChefeDoSetorTest {
 	@Test
 	public void test() {
 		//assertEquals(chefeDoSetor.cadastrarSetor();
+		
+		//autenticacao = new Autenticacao();
+		//autenticacao.setUsuario("Nome");
+		
+		//Assert.assertEquals("Nome", autenticacao.getUsuario());
+
 		//assertEquals(chefeDoSetor.cadastrarFuncionario();
 		//assertEquals(chefeDoSetor.receberEscalaEscolhida()
 		fail("Not yet implemented");

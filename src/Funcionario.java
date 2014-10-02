@@ -1,4 +1,5 @@
 import junit.framework.TestCase;
+
 public class Funcionario  {
 	
 	protected String nome;
