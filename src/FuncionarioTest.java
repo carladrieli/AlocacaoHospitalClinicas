@@ -7,11 +7,11 @@ import org.junit.Test;
 
 public class FuncionarioTest {
 	
-	Funcionario funcionario;
+	Funcionario perfil;
 
 	@Before
 	public void setUp() throws Exception {
-		funcionario = new Funcionario();
+		perfil = new Funcionario();
 		System.out.println("Teste inicializado");
 	}
 
@@ -22,7 +22,6 @@ public class FuncionarioTest {
 
 	@Test
 	public void test() {
-		//assertEquals(funcionario.cadastrarDisponibilidade();
 		fail("Not yet implemented");
 	}
 

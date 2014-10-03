@@ -5,13 +5,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class PerfilTest {
+public class PessoaTest {
 	
-	Perfil perfil;
+	Pessoa funcionario;
 
 	@Before
 	public void setUp() throws Exception {
-		perfil = new Perfil();
+		funcionario = new Pessoa();
 		System.out.println("Teste inicializado");
 	}
 
@@ -22,6 +22,7 @@ public class PerfilTest {
 
 	@Test
 	public void test() {
+		//assertEquals(funcionario.cadastrarDisponibilidade();
 		fail("Not yet implemented");
 	}
 
